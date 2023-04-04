@@ -15,12 +15,6 @@
     src: url(../KHSHtype.otf);
 }
 
-@font-face {
-    font-family: 'KHSHFontBG';
-    src: url(../KHSHtypeBG.otf);
-}
-
-
 html {
     color: #222;
     font-size: 1em;
@@ -29,6 +23,7 @@ html {
 }
 
 p {}
+
 
 .dropbtn {
     background-color: white;
@@ -75,14 +70,6 @@ p {}
 
 .logo {
     /*    position: relative;*/
-}
-
-.lang {
-    font-family: 'KHSHFont';
-    font-size: 30px;
-    padding-left: 20px;
-    padding-top: 5px;
-    color: black;
 }
 
 .live {
@@ -235,7 +222,6 @@ grid-row-gap: 11px;
     top: 0;
      font-family: 'KHSHFont';
     font-size: 22px;
-    color: black;
 }
 
 .listitem:hover{
@@ -253,11 +239,6 @@ grid-row-gap: 11px;
     border-radius: 4px;
     margin: 8px;
     padding: 12px;
-    color: black;
-}
-
-a:visited{
-    text-decoration: none;
 }
 
 #listitem_date{

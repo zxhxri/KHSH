@@ -20,13 +20,10 @@
 
 .event_video {
     grid-area: 1 / 2 / 2 / 3;
-   
 }
 
 .event_video iframe {
     border-radius: 18px;
-     position: sticky;
-    top: 20px;
 }
 
 .title {
@@ -180,30 +177,6 @@ a  {
     color: black;
 }
 
-a:visited{
-    text-decoration: none;
-}
-
-
-footer{
-    border-top: 1px solid blue;
-    padding: 20px;
-    background-color: #0044F2;
-    color: white;
-    column-count: 2;
-}
-
-footer a{
-    color: white;
-    font-family: 'KHSHFont';
-    font-size: 25px;
-}
-
-footer a:hover{
-    color: lawngreen;
-}
-
-
 @media only screen and (max-width: 850px) {
     /* Style adjustments for viewports that meet the condition */
     .event {
@@ -235,4 +208,3 @@ footer a:hover{
     }
 
 }
-
