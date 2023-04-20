@@ -1,8 +1,63 @@
 @font-face {
     font-family: 'KHSHFont';
-    src: url(../KHSHtype.otf);
+    src: url(../KHSH-Regular.otf);
 }
 
+@font-face {
+    font-family: 'William';
+    src: url(../WilliamTextProRegIta.otf);
+}
+
+@font-face {
+    font-family: 'Suisse';
+    src: url(../SuisseIntl-Book.otf);
+}
+
+*{
+     -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.arrows{
+/*    position: absolute;*/
+    width: 75%;
+    height: auto;
+    padding-bottom: 50px;
+    font-size: 20px;
+    color: black;
+}
+
+.arrow_next{
+    font-family: 'KHSHFont';
+    padding-left: 20px;
+/*    right: 0px;*/
+    float: right;
+/*    position: relative;*/
+/*    text-align: right;*/
+    
+}
+
+.arrow_next a, .arrow_previous a{
+
+   padding: 10px;
+}
+
+
+.arrow_next a:hover, .arrow_previous a:hover{
+    color: white;
+    background-color: blue;
+    border-radius: 25px;
+/*   padding: 20px;*/
+}
+
+.arrow_previous{
+    font-family: 'KHSHFont';
+    padding-left: 20px;
+    float: left;
+/*    position: absolute;*/
+/*    text-align: left;*/
+/*    text-align: right;*/
+}
 
 .event {
     display: grid;
@@ -11,11 +66,12 @@
     grid-column-gap: 14px;
     grid-row-gap: 11px;
     width: 75%;
+    padding-bottom: 50px;
 }
 
 .event_text {
     grid-area: 1 / 1 / 2 / 2;
-    padding: 20px;
+    padding-left: 20px;
 }
 
 .event_video {
@@ -39,7 +95,7 @@
 .date {
     grid-area: 2 / 1 / 3 / 2;
     /*     height: 50%;*/
-    font-family: Arial;
+    font-family: 'Suisse';
     font-size: 20px;
     text-align: left;
 }
@@ -47,15 +103,16 @@
 .location {
     grid-area: 2 / 2 / 3 / 3;
     /*     height: 50%;*/
-    font-family: Arial;
+    font-family: 'Suisse';
     font-size: 20px;
     text-align: left;
 }
 
 .info {
     grid-area: 1 / 3 / 3 / 5;
-    font-family: Times;
+    font-family: 'William';
     font-size: 18px;
+      word-spacing: 2px;
 }
 
 .parent {
@@ -145,15 +202,43 @@ max-height:100%;
 }
 
 .sidebar{
-    position: fixed;
+     position: fixed;
     width: 22%;
     float: right;
     right: 0;
-    top: 0;
-     font-family: 'KHSHFont';
+    top: 10px;
+    font-family: 'KHSHFont';
     font-size: 22px;
+    color: black;
 }
 
+.sidebar_item {
+    display: grid;
+grid-template-columns: 0.7fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 15px;
+    border-bottom: 1px solid black;
+    opacity: 30%;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.sidebar_item:hover{
+   opacity: 100%;
+}
+
+.sidebar_date {
+    grid-area: 1 / 1 / 2 / 2;
+    font-family: 'KHSHFont';
+    font-size: 25px;
+}
+
+
+
+.sidebar_title {
+    grid-area: 1 / 2 / 2 / 3;
+}
 .listitem:hover{
     opacity: 100%;
 }
@@ -172,7 +257,7 @@ max-height:100%;
 }
 
 #listitem_date{
-    font-family: Arial;
+    font-family: 'KHSHFont';
 }
 
 a  {
