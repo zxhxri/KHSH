@@ -30,13 +30,16 @@
 html {
     color: #222;
     font-size: 1em;
-   
+    max-width: 100%;
     /*    line-height: 1.4;*/
 
 }
 
 body{
      background-color: white;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
 }
 
 *{
