@@ -327,8 +327,7 @@ footer {
     background-color: #0044F2;
     color: white;
     column-count: 2;
-    font-family: 'KHSHFont';
-    font-size: 25px;
+    max-width: 100%;
 }
 
 footer a {

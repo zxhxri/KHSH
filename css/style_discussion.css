@@ -286,6 +286,7 @@ footer{
     background-color: #0044F2;
     color: white;
     column-count: 2;
+    max-width: 100%;
 }
 
 footer a{
@@ -325,6 +326,11 @@ footer a:hover{
     width: 92%;
 
 }
+    
+    .title{
+        font-size: 40px;
+        line-height: 38px;
+    }
     
     .event_text{
         padding: 10px;
