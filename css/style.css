@@ -18,20 +18,25 @@
 @font-face {
     font-family: 'William';
     src: url(../WilliamTextProRegIta.otf);
-    font-feature-settings: "ss06";
 }
 
 @font-face {
     font-family: 'Suisse';
     src: url(../SuisseIntl-Book.otf);
+    font-feature-settings: "ss16";
 }
 
 
 html {
     color: #222;
     font-size: 1em;
+   
     /*    line-height: 1.4;*/
 
+}
+
+body{
+     background-color: white;
 }
 
 *{
@@ -84,8 +89,11 @@ p {}
     border-radius: 32px;
 }
 
-.logo {
-    /*    position: relative;*/
+.logo{
+    width: 75%;
+    padding: 15px;
+    cursor: pointer;
+/*    position: absolute;*/
 }
 
 .lang {
@@ -198,6 +206,7 @@ p {}
     font-family: 'KHSHFont';
     font-size: 60px;
     line-height: 50px;
+    text-transform: uppercase;
 }
 
 .title a {
@@ -228,7 +237,7 @@ p {}
 .info {
     grid-area: 1 / 3 / 3 / 5;
     font-family: 'William';
-    font-size: 18px;
+    font-size: 16px;
     word-spacing: 2px;
 }
 
@@ -273,12 +282,14 @@ a {
 .sidebar{
      position: fixed;
     width: 22%;
+    padding-right: 10px;
     float: right;
     right: 0;
     top: 10px;
     font-family: 'KHSHFont';
     font-size: 22px;
     color: black;
+   
 }
 
 .sidebar_item {
@@ -316,6 +327,8 @@ footer {
     background-color: #0044F2;
     color: white;
     column-count: 2;
+    font-family: 'KHSHFont';
+    font-size: 25px;
 }
 
 footer a {
@@ -488,7 +501,8 @@ textarea {
     }
 
     .logo {
-        width: 100%;
+        width: 95%;
+        padding: 10px;
     }
 
 
@@ -504,10 +518,23 @@ textarea {
         border-radius: 25px;
         padding: 20px;
     }
+    
+    .div2, .div3,.div4,.div5{
+        padding: 10px;
+    }
 
     .sidebar {
         position: relative;
-        width: 100%;
+        width: 96%;
+        padding-left: 10px;
+        top: 0;
+/*        padding: 20px;*/
+        float: left;
+/*        margin: 10px;*/
+    }
+    
+    footer{
+        column-count: 1;
     }
 
 }
