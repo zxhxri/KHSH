@@ -16,8 +16,21 @@
 *{
      -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
-    overflow-y: visible;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+/*    overflow-x: hidden;*/
+    max-width: 100%;
+    /*    line-height: 1.4;*/
+
+}
+
+body{
+     background-color: white;
+   max-width: 100%;
+     overflow-x: hidden;
 }
 
 .logo{
