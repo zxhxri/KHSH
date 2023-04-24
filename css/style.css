@@ -521,6 +521,11 @@ textarea {
     .div2, .div3,.div4,.div5{
         padding: 10px;
     }
+    
+    .title{
+        font-size: 40px;
+        line-height: 38px;
+    }
 
     .sidebar {
         position: relative;
