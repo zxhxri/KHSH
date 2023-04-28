@@ -21,6 +21,11 @@
 }
 
 @font-face {
+    font-family: 'WilliamReg';
+    src: url(../WilliamTextProReg.otf);
+}
+
+@font-face {
     font-family: 'Suisse';
     src: url(../SuisseIntl-Book.otf);
     font-feature-settings: "ss16";
@@ -46,8 +51,6 @@ body{
      -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-p {}
 
 .dropbtn {
     background-color: white;
@@ -96,7 +99,16 @@ p {}
     width: 75%;
     padding: 15px;
     cursor: pointer;
+    font-family: 'KHSH';
+    font-size: 20em;
+    color: black;
 /*    position: absolute;*/
+}
+
+.logo:hover{
+    fill: blue;
+   filter: blur(0.2px);
+                    transition: 1s;
 }
 
 .lang {
@@ -197,7 +209,7 @@ p {}
 .event {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /*grid-template-rows: repeat(2, 1fr); */
+    grid-template-rows: repeat(2, 0.5fr); 
     grid-column-gap: 20px;
     grid-row-gap: 11px;
     width: 78%;
@@ -207,8 +219,8 @@ p {}
 .title {
     grid-area: 1 / 1 / 2 / 3;
     font-family: 'KHSHFont';
-    font-size: 60px;
-    line-height: 50px;
+    font-size: 4vw;
+    line-height: 3.5vw;
     text-transform: uppercase;
 }
 
@@ -225,23 +237,32 @@ p {}
     grid-area: 2 / 1 / 3 / 2;
     /*     height: 50%;*/
     font-family: 'William';
-    font-size: 20px;
+    font-size: 16px;
     text-align: left;
+    text-transform: uppercase;
 }
 
 .location {
     grid-area: 2 / 2 / 3 / 3;
     /*     height: 50%;*/
     font-family: 'William';
-    font-size: 20px;
+    font-size: 16px;
     text-align: left;
+    text-transform: uppercase;
+/*    text-transform: uppercase;*/
 }
 
 .info {
     grid-area: 1 / 3 / 3 / 5;
     font-family: 'Suisse';
-    font-size: 16px;
-    word-spacing: 2px;
+    font-size: 14px;
+/*    color: darkslategreygrey;*/
+/*    word-spacing: 2px;*/
+/*    word-spacing: -1px;*/
+}
+
+#participants{
+    font-family: "William";
 }
 
 
