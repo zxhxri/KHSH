@@ -9,11 +9,6 @@
 }
 
 @font-face {
-    font-family: 'WilliamReg';
-    src: url(../WilliamTextProReg.otf);
-}
-
-@font-face {
     font-family: 'Suisse';
     src: url(../SuisseIntl-Book.otf);
 }
@@ -43,17 +38,9 @@ body{
     width: 75%;
     padding: 15px;
     cursor: pointer;
-    font-family: 'KHSH';
-    font-size: 20em;
-    color: black;
 /*    position: absolute;*/
 }
 
-.logo:hover{
-    fill: blue;
-   filter: blur(0.2px);
-                    transition: 1s;
-}
 
 .arrows{
 /*    position: absolute;*/
@@ -134,30 +121,23 @@ color: blue;
     grid-area: 2 / 1 / 3 / 2;
     /*     height: 50%;*/
     font-family: 'William';
-    font-size: 16px;
+    font-size: 20px;
     text-align: left;
-    text-transform: uppercase;
-    padding-top: 20px;
 }
 
 .location {
     grid-area: 2 / 2 / 3 / 3;
     /*     height: 50%;*/
     font-family: 'William';
-    font-size: 16px;
+    font-size: 20px;
     text-align: left;
-    text-transform: uppercase;
 }
 
 .info {
     grid-area: 1 / 3 / 3 / 5;
     font-family: 'Suisse';
-    font-size: 14px;
+    font-size: 16px;
       word-spacing: 2px;
-}
-
-#participants{
-    font-family: "William";
 }
 
 .parent {
